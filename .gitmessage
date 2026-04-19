@@ -1,0 +1,42 @@
+# Algorithm Competition Commit Message
+# =====================================
+# feat:     New algorithm solution or feature
+# fix:      Bug fix in existing solution
+# refactor: Code refactoring without functionality change
+# docs:     Documentation only changes
+# style:    Code style changes (formatting, etc.)
+# test:     Adding or updating tests
+# chore:    Maintenance tasks, build config, etc.
+
+# Subject line (required)
+# ----------------------
+# - Use imperative mood: "Add" not "Added" or "Adds"
+# - First letter lowercase
+# - No period at the end
+# - Keep under 50 characters
+
+# Body (optional)
+# ---------------
+# - Explain WHAT and WHY, not HOW
+# - Wrap at 72 characters
+# - Use bullet points for multiple changes
+
+# Examples:
+# ---------
+# feat: add LeetCode two sum solution
+#
+# - Implement hash map approach with O(n) time complexity
+# - Add test cases for edge conditions
+# - Update README with problem description
+
+# fix: correct off-by-one error in binary search
+#
+# The binary search implementation had an off-by-one error
+# when handling empty arrays. This fix ensures proper bounds
+# checking.
+
+# refactor: optimize memory usage in graph traversal
+#
+# - Replace adjacency matrix with adjacency list
+# - Reduce memory usage from O(n^2) to O(n + m)
+# - Maintain same time complexity

@@ -1,0 +1,47 @@
+# Git Aliases for Algorithm Competition Workflow
+# ================================================
+
+[alias]
+  # Basic shortcuts
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  
+  # Simplified GitHub Flow aliases
+  new = "!f() { git checkout -b \"feature/$1\"; }; f"
+  done = "!f() { git checkout main && git merge --no-ff \"feature/$1\" && git branch -d \"feature/$1\"; }; f"
+  
+  # Commit with proper message
+  save = "!f() { git add . && git commit -m \"feat: $1\"; }; f"
+  fix = "!f() { git add . && git commit -m \"fix: $1\"; }; f"
+  ref = "!f() { git add . && git commit -m \"refactor: $1\"; }; f"
+  
+  # View changes
+  changes = diff --name-status
+  staged = diff --cached
+  
+  # Cleanup
+  cleanup = "!git fetch --prune && git branch --merged | grep -v '\\*\\|main' | xargs -n 1 git branch -d"
+  
+  # Undo
+  unstage = reset HEAD --
+  undo = reset --soft HEAD~1
+  redo = "!f() { git reset --hard HEAD~$1; }; f"
+  
+  # Tags for milestones
+  milestone = "!f() { git tag -a \"v$1\" -m \"Milestone: $2\"; }; f"
+
+[core]
+  autocrlf = input
+  excludesfile = ~/.gitignore_global
+  
+[push]
+  default = simple
+  
+[color]
+  ui = auto
+  
+[init]
+  defaultBranch = main
