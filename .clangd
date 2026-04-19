@@ -1,0 +1,9 @@
+CompileFlags:
+  Add: 
+    - -std=c++23
+    - -Wall
+    - -Wextra
+  Remove:
+    - -fmodules-ts
+    - -fmodule-mapper=*
+    - -fdeps-format=p1689r5

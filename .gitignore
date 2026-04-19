@@ -1,0 +1,41 @@
+# IDE和编辑器文件
+/.vscode/
+/.idea/
+*.swp
+*.swo
+*~
+
+# 构建目录
+/build/
+/out/
+/bin/
+*.exe
+*.out
+
+# 编译产物
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+
+# CMake生成文件
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# 缓存目录
+/.cache/
+
+# 第三方库（已移除）
+/thirdlib/
+
+# 临时文件
+*.tmp
+*.temp
+
+# 系统文件
+.DS_Store
+Thumbs.db
