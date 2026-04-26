@@ -1,11 +1,5 @@
-# 1. 选用一个基础风格，这里选择 'Google'[citation:6]
+
 BasedOnStyle: LLVM
-
-# 2. 覆盖基础风格中的缩进设置，将默认的2个空格改为4个[citation:5]
 IndentWidth: 4
-
-# 3. 强制使用空格，与缩进宽度匹配
 UseTab: Never
-
-# (可选) 如果你希望public/private等访问修饰符不缩进，可以设置偏移量为-4[citation:9]
 # AccessModifierOffset: -4
