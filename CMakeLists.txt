@@ -27,6 +27,3 @@ foreach(source_file ${ALL_SOURCES})
     get_filename_component(target_name ${source_file} NAME_WE)
     add_executable(${target_name}_dummy ${source_file})
 endforeach()
-
-# 可选：添加一个示例目标用于测试
-add_executable(example_dummy leetcode/min_mirror_pair_distance.cpp)
